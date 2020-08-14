@@ -1,0 +1,56 @@
+---
+service_type: host
+addr: prasta-os1
+hostname: prasta-os1
+labels:
+    - osd
+    - mon
+    - mgr
+---
+service_type: host
+addr: prasta-os2
+hostname: prasta-os2
+labels:
+    - osd
+    - mon
+    - mgr
+---
+service_type: host
+addr: prasta-os3
+hostname: prasta-os3
+labels:
+    - osd
+    - mon
+    - mgr
+---
+service_type: host
+addr: prasta-os4
+hostname: prasta-os4
+labels:
+    - osd
+---
+service_type: host
+addr: prasta-os5
+hostname: prasta-os5
+labels:
+    - osd
+---
+service_type: host
+addr: prasta-os6
+hostname: prasta-os6
+labels:
+    - osd
+---
+service_type: osd
+data_devices:
+    all: true
+placement:
+    label: "osd"
+---
+service_type: mon
+placement:
+    label: "mon"
+---
+service_type: mgr
+placement:
+    label: "mgr"
