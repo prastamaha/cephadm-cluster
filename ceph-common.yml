@@ -4,10 +4,10 @@
   tasks:      
     - name: Add ceph repository for ubuntu18
       apt_repository:
-      repo: deb https://download.ceph.com/debian-octopus/ bionic main
-      state: present
-      filename: ceph.list
-      mode: '0644'
+        repo: deb https://download.ceph.com/debian-octopus/ bionic main
+        state: present
+        filename: ceph.list
+        mode: '0644'
 
     - name: Import ceph gpg key
       shell: curl https://download.ceph.com/keys/release.asc | gpg --no-default-keyring --keyring /tmp/fix.gpg --import - && gpg --no-default-keyring --keyring /tmp/fix.gpg --export > /etc/apt/trusted.gpg.d/ceph.release.gpg && rm /tmp/fix.gpg
