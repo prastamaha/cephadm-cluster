@@ -15,6 +15,7 @@ ceph auth get-or-create client.cinder-backup mon 'profile rbd' osd 'profile rbd 
 
 for i in {1..6}
 do
+ssh prasta-os$i sudo tee /etc/ceph/ceph.client.admin.keyring </etc/ceph/ceph.client.admin.keyring
 ssh prasta-os$i sudo tee /etc/ceph/ceph.conf </etc/ceph/ceph.conf
 done
 
