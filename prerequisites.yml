@@ -26,9 +26,9 @@
   tasks:
     - name: download and install cephadm pkg
       get_url:
-      url: https://github.com/ceph/ceph/raw/octopus/src/cephadm/cephadm
-      dest: /usr/local/bin/cephadm
-      mode: '0755'
+        url: https://github.com/ceph/ceph/raw/octopus/src/cephadm/cephadm
+        dest: /usr/local/bin/cephadm
+        mode: '0755'
     
     - name: install ceph tools
       command: cephadm add-repo --release octopus
