@@ -13,6 +13,11 @@
        name: docker.io
        state: latest
       notify: start and enable docker service
+    
+    - name: make /etc/ceph directory
+      file:
+        path: /etc/ceph
+        state: directory
 
   handlers:
     - name: start and enable docker service
