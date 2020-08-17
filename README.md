@@ -7,6 +7,19 @@ git clone https://github.com/prastamaha/cephadm-cluster.git
 cd cephadm-cluster
 ```
 
+## SSH config
+```
+nano ~/.ssh/config
+```
+```
+Host *
+    UserKnownHostsFile /dev/null
+    StrictHostKeyChecking no
+    IdentitiesOnly yes
+    ConnectTimeout 0
+    ServerAliveInterval 300
+```
+
 ## Prerequisites
 
 ```
