@@ -37,3 +37,10 @@ ansible-playbook -i hosts ceph-common.yml
 ```
 cephadm bootstrap --apply-spec cephadm-cluster.yml --mon-ip 10.10.150.10
 ```
+
+## create pool and keyring for openstack
+```
+./openstack-keyring.sh
+```
+
+
