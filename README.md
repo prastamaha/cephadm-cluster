@@ -26,7 +26,7 @@ Host *
 ansible-playbook -i hosts prerequisites.yml
 ```
 
-## Install ceph-common on all nodes
+## Install ceph-common on all nodes (optional)
 
 ```
 ansible-playbook -i hosts ceph-common.yml
