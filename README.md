@@ -37,6 +37,12 @@ ansible-playbook -i hosts ceph-common.yml
 ```
 cephadm bootstrap --apply-spec cephadm-cluster.yml --mon-ip 10.10.150.10
 ```
+or
+
+```
+./boot-cluster.yml
+```
+
 deploying a ceph cluster may take several minutes
 
 ## create pool and keyring for openstack
